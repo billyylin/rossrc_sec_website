@@ -1,0 +1,38 @@
+{"filings_index_variable_description":[
+  {"variable_name":"CIK", "data_type":"CHAR", "description":"SEC Central Index Key", "detail":""},
+  {"variable_name":"CoName", "data_type":"CHAR", "description":"Company Name", "detail":""},
+  {"variable_name":"FDdate", "data_type":"DATE", "description":"Filing Date", "detail":""},
+  {"variable_name":"FIndexDate", "data_type":"DATE", "description":"First SECDate with Index Record Information", "detail":""},
+  {"variable_name":"FName", "data_type":"CHAR", "description":"Reference Name of Complete Report Filing", "detail":""},
+  {"variable_name":"Form", "data_type":"CHAR", "description":"SEC Form", "detail":""},
+  {"variable_name":"IName", "data_type":"CHAR", "description":"Reference Name of Report HTML Index", "detail":""},
+  {"variable_name":"LIndexDate", "data_type":"DATE", "description":"Last SECDate with Index Record Information", "detail":""},
+  {"variable_name":"Source", "data_type":"CHAR", "description":"Index Source: 1-Daily, 2-Full, 3-Both", "detail":""}
+],
+"filings_exibits_variable_description":[
+  {"variable_name":"CoName", "data_type":"CHAR", "description":"Company Name", "detail":""},
+  {"variable_name":"Description", "data_type":"CHAR", "description":"Exhibit Description", "detail":""},
+  {"variable_name":"FDate", "data_type":"DATE", "description":"Filing Date", "detail":""},
+  {"variable_name":"FileName", "data_type":"CHAR", "description":"Exhibit Reference Filename", "detail":""},
+  {"variable_name":"FName", "data_type":"CHAR", "description":"Reference Name of Complete Report Filing", "detail":""},
+  {"variable_name":"Form", "data_type":"CHAR", "description":"SEC Form", "detail":""},
+  {"variable_name":"FSize", "data_type":"NUM", "description":"Complete Report File Size", "detail":""},
+  {"variable_name":"RDate", "data_type":"DATE", "description":"Conformed Period of Report or Fiscal Period End", "detail":""},
+  {"variable_name":"SECADate", "data_type":"DATE", "description":"SEC Acceptance Date", "detail":""},
+  {"variable_name":"SECATime", "data_type":"CHAR", "description":"SEC Acceptance Time", "detail":""},
+  {"variable_name":"SEQuence", "data_type":"CHAR", "description":"Exhibit Sequence Number", "detail":""},
+  {"variable_name":"Type", "data_type":"CHAR", "description":"Exhibit Type", "detail":""}
+],
+"eightk_items_variable_description":[
+  {"variable_name":"CoName", "data_type":"CHAR", "description":"Company Name", "detail":""},
+  {"variable_name":"FDate", "data_type":"DATE", "description":"Filing Date", "detail":""},
+  {"variable_name":"FName", "data_type":"CHAR", "description":"Reference Name of Complete Report Filing", "detail":""},
+  {"variable_name":"Form", "data_type":"CHAR", "description":"SEC Form", "detail":""},
+  {"variable_name":"FSize", "data_type":"NUM", "description":"Complete Report File Size", "detail":""},
+  {"variable_name":"Item", "data_type":"CHAR", "description":"Form 8-K Item Description", "detail":""},
+  {"variable_name":"NItem", "data_type":"CHAR", "description":"Form 8-K Item Number", "detail":""},
+  {"variable_name":"NItemNo", "data_type":"NUM", "description":"Number of 8-K Items", "detail":""},
+  {"variable_name":"RDate", "data_type":"DATE", "description":"Conformed Period of Report or Fiscal Period End", "detail":""},
+  {"variable_name":"SECADate", "data_type":"DATE", "description":"SEC Acceptance Date", "detail":""},
+  {"variable_name":"SECATime", "data_type":"CHAR", "description":"SEC Acceptance Time", "detail":""}
+]}

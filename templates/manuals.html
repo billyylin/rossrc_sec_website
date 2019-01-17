@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <title>Manuals - Research Computing SEC Filing Database</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+  <style>
+
+    @import "compass/css3";
+    $height-footer: 60px;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html{
+      min-height: 100%;
+      position: relative;
+      body{
+        margin-bottom: $height-footer;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        color: #333;
+      }
+    }
+
+    #footer{
+      bottom:0;
+      width:100%;
+      position:absolute;
+      height: $height-footer;
+      background-color: #4d94ff;
+    }
+    .page-footer a{
+      color: white !important;
+    }
+    .footer-copyright{
+      font-size: 12px;
+    }
+
+    /* #content{
+      margin: 4em 0em 4em 0em;
+    } */
+
+    #content{
+      padding: 20px 20px 370px 20px;
+    }
+
+    #header{
+      background-color: #0073e6;
+    }
+
+    header h3{
+      color: white;
+      font-size: 32px;
+      padding: 7px 0px;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    #logo{
+      width: 300px;
+      padding: 0px 0px 0px 0px;
+    }
+    #search{
+      padding: 10px;
+    }
+
+    #introduction{
+      height: 160px;
+    }
+
+    .lead{
+      text-align: center;
+    }
+
+    .card{
+      margin:10px;
+    }
+    .card-text{
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="media align-items-end">
+      <div class="row">
+      <a href="{{url_for('index')}}"><img class="align-self-start mr-3" src="{{url_for('static', filename='Rosslogo.png')}}" id="logo" alt="ross logo"></a>
+    </div>
+      <div class="media-body">
+        <h3>SEC Database</h3>
+      </div>
+
+      <!-- <form class="form-inline my-2 my-lg-0" id="search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+  </div>
+  </header>
+
+  <div class="row jumbotron justify-content-md-center no-gutters" id="introduction">
+    <h1 class="display-6">SEC Manuals</h1>
+    <!-- <p class="lead">
+      The SEC Analytics Suite attempts to satisfy a growing demand in academia and industry research communities to have a unified platform with necessary resources and tools to data-mine and analyze financial and non-financial firm-related information that is not systematically retrieved and provided to academia by data vendors.
+    </p>
+
+    <a href="{{url_for('manuals')}}"><button class="btn btn-outline-primary btn" role="button">Manuals and Overviews</button></a> -->
+  </div>
+
+  <div class="container" id="content">
+    <div class="row justify-content-center">
+              <!-- <div class="col-sm-4"> -->
+                <div class="card col-md-3">
+                  <div class="card-body row justify-content-center">
+                    <h5 class="card-title">SEC Analytics Suite</h5>
+                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a href="{{ url_for('static', filename='Manual_Test.pdf') }}" class="btn btn-primary">See the Manual</a>
+                  </div>
+                </div>
+              <!-- </div> -->
+              <!-- <div class="col-sm-4"> -->
+                <div class="card col-md-3">
+                  <div class="card-body row justify-content-center">
+                    <h5 class="card-title">Dataset List</h5>
+                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a href="{{ url_for('static', filename='Manual_Test.pdf') }}" class="btn btn-primary">See the Manual</a>
+                  </div>
+                </div>
+                <div class="card col-md-3">
+                  <div class="card-body row justify-content-center">
+                    <h5 class="card-title">SEC Forms List</h5>
+                    <br/>
+                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a href="{{ url_for('static', filename='Manual_Test.pdf') }}" class="btn btn-primary">See the Manual</a>
+                  </div>
+                </div>
+    </div>
+
+                <div class="row justify-content-center">
+                <!-- <div class="col-sm-4"> -->
+                <div class="card col-md-3">
+                  <div class="card-body row justify-content-center">
+                    <h5 class="card-title">Filings Exihibits Data</h5>
+                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a href="{{ url_for('static', filename='Manual_Test.pdf') }}" class="btn btn-primary">See the Manual</a>
+                  </div>
+                </div>
+                <div class="card col-md-3">
+                  <div class="card-body row justify-content-center">
+                    <h5 class="card-title">Form 8-K Item Data</h5>
+                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a href="{{ url_for('static', filename='Manual_Test.pdf') }}" class="btn btn-primary">See the Manual</a>
+                  </div>
+                </div>
+                <!-- <div class="card col-md-3">
+                  <div class="card-body row justify-content-center">
+                    <h5 class="card-title">List of Filings Exihibits</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go to the database</a>
+                  </div
+                </div> -->
+                </div>
+</div>
+
+  <div class="page-footer font-small indigo mt-5 col-md-12" id="footer">
+    <div class="container">
+      <div class="row text-center d-flex justify-content-center pt-5 mb-2">
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="https://rossrc.bus.umich.edu/about.html#direct-item-about" target="blank">About Us</a>
+          </h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="https://rossrc.bus.umich.edu/projects.html" target="blank">Projects</a>
+          </h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="https://rossrc.bus.umich.edu/databases.html#direct-item-wrds" target="blank">Databases</a>
+          </h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="https://rossrc.bus.umich.edu/about.html#direct-item-about" target="blank">Contact</a>
+          </h6>
+        </div>
+      </div>
+      <hr class="rgba-white-light" style="margin: 0 3%;">
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+        <div class="col-md-8 col-12 mt-5 text-white">
+          <p style="line-height: 1.7rem">The Ross Research Computing provides support for the empirical research needs of faculty and PhD students at the Ross School of Business.</p>
+        </div>
+      </div>
+    <div class="footer-copyright text-center py-4 text-white">© 2018 Copyright:
+      <a href="http://rossrc.bus.umich.edu" target="blank"> Ross Research Computing</a>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
